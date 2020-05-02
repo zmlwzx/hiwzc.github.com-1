@@ -1,0 +1,13 @@
+---
+layout: default
+title: 文章列表
+---
+
+<ul class="posts-list">
+    {% assign sorted_posts = site.posts | sort: "categories","last" %}
+    {% for post in sorted_posts %}
+    <li class=“posts-item”>
+        <a href="{{ post.url }}">{% if post.categories.size > 0 %}[{{ post.categories }}]{% endif %} {{ post.title }}<div class="posts-date">{{ post.date | date:"%Y-%m-%d"}}</div></a>
+    </li>
+    {% endfor %}
+</ul>
