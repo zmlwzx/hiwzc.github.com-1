@@ -25,7 +25,14 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-
+        {% if page.categories.size > 0 && page.url != "/" and page.url != "/index.html" and page.url != "" %}
+        <div>
+            <div class="category-text">本文分类：</div>
+            <div class="category-btn">{{ page.categories }}</div>
+        </div>
+        <hr>
+        {% endif %} 
+        
         {% if page.toc %} 
         <nav id="table-of-contents" role="navigation">
             <p>本文目录</p>
@@ -34,6 +41,10 @@
         {% endif %} 
 
         {{ content }}
+
+        {% if page.url != "/" and page.url != "/index.html" and page.url != "" %}
+        <div class="copyinfo">本文来自 [{{ site.title }}]({{ site.domain }})，转载请注明出处。</div>
+        {% endif %} 
 
         <footer class="site-footer">
             <ul>

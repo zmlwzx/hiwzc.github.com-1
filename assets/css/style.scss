@@ -108,6 +108,49 @@ a {
   hr {
     height: 1px;
   }
+
+  .category-text {
+    height: 2em;
+    line-height: 2em;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 0.7em;
+    display: inline-block;
+  }
+
+  .category-btn {
+    background-color: $section-headings-color;
+    color: white;
+    height: 2em;
+    line-height: 2em;
+    padding: 0em 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.7em;
+    display: inline-block;
+  }
+
+  .copyinfo {
+    padding: 1em;
+    border: solid 1px $border-color;
+    background-color: $code-bg-color;
+    color: $blockquote-text-color;
+    word-break: break-all;
+    
+    @include large {
+      font-size: 1rem;
+    }
+  
+    @include medium {
+      font-size: 0.9rem;
+    }
+  
+    @include small {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .project-tagline {
