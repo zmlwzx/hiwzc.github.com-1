@@ -9,3 +9,14 @@ github_url: https://github.com/hiwzc
 beian_miit_no: 粤ICP备17127050号-1
 beian_gov_no: 粤公网安备44030602000643号
 beian_gov_url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602000643
+
+favorites:
+  -
+    title: 阿里巴巴Java开发手册
+    url: https://github.com/alibaba/p3c
+  -
+    title: 敏捷软件开发宣言
+    url: http://agilemanifesto.org/iso/zhchs/manifesto.html
+  -
+    title: The Twelve-Factor App
+    url: https://12factor.net/zh_cn/
