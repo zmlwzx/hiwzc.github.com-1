@@ -147,6 +147,7 @@ a {
 
   .copyinfo {
     padding: 1em;
+    margin-top: 1em;
     border: solid 1px $border-color;
     background-color: $code-bg-color;
     color: $blockquote-text-color;
@@ -175,6 +176,18 @@ a {
 
 .site-footer {
   color: $blockquote-text-color;
+
+  @include large {
+    font-size: 0.9rem;
+  }
+
+  @include medium {
+    font-size: 0.8rem;
+  }
+
+  @include small {
+    font-size: 0.8rem;
+  }
 
   a {
     color: $blockquote-text-color;
