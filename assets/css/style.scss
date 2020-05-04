@@ -60,20 +60,33 @@ a {
 }
 
 .main-content {
+
+  @include large {
+    font-size: 1rem;
+  }
+
+  @include medium {
+    font-size: 0.9rem;
+  }
+
+  @include small {
+    font-size: 0.9rem;
+  }
+
   nav {
     padding: 1em 1em 0em 1em;
     border: solid 1px #eff0f1;
 
     @include large {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   
     @include medium {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   
     @include small {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
     
     p {
@@ -265,7 +278,7 @@ a {
 
 li.category-item {
   display: inline-block;
-  width: 15em;
+  width: 17.3em;
   padding: 0 1em;
   text-overflow: ellipsis;
   overflow: hidden;
